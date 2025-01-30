@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/navbar";
+import Header from "@/components/header";
 
 const urbanist = Urbanist({
   variable: "--font-inter",
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en" className="scrollbar-thin scrollbar-track-zinc-800 scrollbar-thumb-zinc-500">
       <body className={` ${urbanist.variable} antialiased`}>
         <Navbar />
+        <Header />
         {children}
       </body>
     </html>
