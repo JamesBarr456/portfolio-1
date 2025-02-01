@@ -1,8 +1,12 @@
-import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/navbar";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 import Header from "@/components/header";
+import type { Metadata } from "next";
+import Navbar from "../components/navbar";
+import { Urbanist } from "next/font/google";
 
 const urbanist = Urbanist({
   variable: "--font-inter",

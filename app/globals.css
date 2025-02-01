@@ -12,9 +12,15 @@ main {
   height: 100vh; /* 100% de la altura de la ventana gráfica (viewport), que es el área visible de la página en el navegador, excluyendo elementos como la barra de herramientas del navegador. */
   height: 100dvh; /* el 100% de la altura del viewport, pero incluye los cambios dinámicos*/
 }
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #f5741c;
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
